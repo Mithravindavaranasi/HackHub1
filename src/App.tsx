@@ -120,9 +120,6 @@ function App() {
                   onFileUpload={addDocument}
                   currentFileCount={documents.length}
                 />
-                 <div className="min-h-screen bg-white">
-                    <Header activeSection={activeSection} onSectionChange={handleSectionChange} />
-      
                 <div className="text-center">
                   <AnalysisButton
                     onAnalyze={handleAnalysis}
