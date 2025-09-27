@@ -7,6 +7,8 @@ import { ReportView } from './components/ReportView';
 import { UsageDashboard } from './components/UsageDashboard';
 import { ExternalMonitor } from './components/ExternalMonitor';
 import { useDocumentAnalyzer } from './hooks/useDocumentAnalyzer';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 type Tab = 'upload' | 'analysis' | 'usage' | 'monitor';
 
@@ -119,7 +121,9 @@ function App() {
                   onFileUpload={addDocument}
                   currentFileCount={documents.length}
                 />
-                
+                 <div className="min-h-screen bg-white">
+                    <Header activeSection={activeSection} onSectionChange={handleSectionChange} />
+      
                 <div className="text-center">
                   <AnalysisButton
                     onAnalyze={handleAnalysis}
@@ -208,6 +212,8 @@ function App() {
           </div>
         )}
       </div>
+    </div>
+      <Footer />
     </div>
   );
 }
