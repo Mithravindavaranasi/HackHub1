@@ -152,18 +152,9 @@ function App() {
         )}
         {activeTab === 'analysis' && (
           <div className="space-y-8">
-            {/* --- FIX 2: Added conditional rendering if no reports exist --- */}
-               {reportToShow ? (
-              <ReportView report={reportToShow} />
-            ) : (
-              <div className="bg-white border border-gray-200 rounded-xl p-12 text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">No Analysis Report Available</h3>
-                <p className="text-gray-600">Please upload at least two documents on the **Document Upload** tab and click **Analyze Documents** to generate your first report.</p>
-              </div>
-            )}
+            <ReportView report={currentReport || (reports.length > 0 ? reports[0] : null)} />
           </div>
-        )} 
-        
+        )}
         {activeTab === 'usage' && (
           <div className="space-y-8">
             <UsageDashboard
