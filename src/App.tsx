@@ -35,7 +35,7 @@ function App() {
       setActiveTab('analysis');
     }
   };
-
+  const reportToShow = currentReport || (reports.length > 0 ? reports[0] : null);
   const tabs = [
     { id: 'upload' as Tab, label: 'Document Upload', icon: FileText },
     { id: 'analysis' as Tab, label: 'Analysis Results', icon: Search },
@@ -153,7 +153,7 @@ function App() {
         {activeTab === 'analysis' && (
           <div className="space-y-8">
             {/* --- FIX 2: Added conditional rendering if no reports exist --- */}
-               {reportToShow ?  (
+               {reportToShow ? (
               <ReportView report={reportToShow} />
             ) : (
               <div className="bg-white border border-gray-200 rounded-xl p-12 text-center">
