@@ -153,7 +153,7 @@ function App() {
         {activeTab === 'analysis' && (
           <div className="space-y-8">
             {/* --- FIX 2: Added conditional rendering if no reports exist --- */}
-               {reportToShow ?
+               {reportToShow ?  (
               <ReportView report={reportToShow} />
             ) : (
               <div className="bg-white border border-gray-200 rounded-xl p-12 text-center">
