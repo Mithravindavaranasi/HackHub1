@@ -150,11 +150,15 @@ function App() {
             </div>
           </div>
         )}
-        {activeTab === 'analysis' && (
-          <div className="space-y-8">
-            <ReportView report={currentReport || (reports.length > 0 ? reports[0] : null)} />
-          </div>
-        )}
+       {activeTab === 'analysis' && (
+  <div className="space-y-8">
+    {currentReport || reports.length > 0 ? (
+      <ReportView report={currentReport || reports[0]} />
+    ) : (
+      <p className="text-gray-600 text-center">No reports available yet. Upload and analyze documents first.</p>
+    )}
+  </div>
+)}
         {activeTab === 'usage' && (
           <div className="space-y-8">
             <UsageDashboard
