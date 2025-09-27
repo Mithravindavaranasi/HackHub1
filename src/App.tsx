@@ -8,7 +8,6 @@ import { UsageDashboard } from './components/UsageDashboard';
 import { ExternalMonitor } from './components/ExternalMonitor';
 import { useDocumentAnalyzer } from './hooks/useDocumentAnalyzer';
 import Footer from './components/Footer';
-import Header from './components/Header';
 
 type Tab = 'upload' | 'analysis' | 'usage' | 'monitor';
 
@@ -211,7 +210,6 @@ function App() {
             <ExternalMonitor />
           </div>
         )}
-      </div>
     </div>
       <Footer />
     </div>
