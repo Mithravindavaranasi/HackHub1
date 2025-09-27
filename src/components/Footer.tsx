@@ -10,16 +10,16 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <FileText className="h-8 w-8 text-blue-400 mr-2" />
-              <h3 className="text-2xl font-bold">LinguaLyzer</h3>
+              <h3 className="text-2xl font-bold">SmartDoc</h3>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Advanced multi-language document analysis platform powered by AI. 
+              Smart document checker analysis platform powered by  AI. 
               Helping businesses and researchers analyze text content with precision and speed.
             </p>
             <div className="flex space-x-4">
               <div className="flex items-center text-gray-400">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>contact@lingualyzer.com</span>
+                <span>contact@smartdoc.com</span>
               </div>
             </div>
           </div>
@@ -57,11 +57,11 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9000987689</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>San Francisco, CA</span>
+                <span>Hyderabad,India</span>
               </li>
             </ul>
           </div>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 LinguaLyzer. All rights reserved.
+            © 2024 SmartDoc. All rights reserved.
           </p>
         </div>
       </div>
